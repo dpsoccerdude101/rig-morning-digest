@@ -1,6 +1,6 @@
 ---
 plan: morning-digest
-status: done
+status: ready
 owner: rook
 opened: 2026-10-29
 ---
@@ -77,14 +77,3 @@ page again with `LANE_MARKER` unset (the banner reads "no marker set") and uploa
 link. Move this plan to `docs/plans/done/` with its issue list.
 
 Done when: the preview link no longer shows the lane marker.
-
-## Issues
-
-- [#1 Define digest contracts](https://github.com/dpsoccerdude101/rig-morning-digest/issues/1)
-- [#3 Read and aggregate a night log](https://github.com/dpsoccerdude101/rig-morning-digest/issues/3)
-- [#5 Render the digest page](https://github.com/dpsoccerdude101/rig-morning-digest/issues/5)
-- [#2 Serve digest JSON](https://github.com/dpsoccerdude101/rig-morning-digest/issues/2)
-- [#4 Link nights from the status board](https://github.com/dpsoccerdude101/rig-morning-digest/issues/4)
-- [#6 Test digest routes](https://github.com/dpsoccerdude101/rig-morning-digest/issues/6)
-- [#7 Publish reviewer preview](https://github.com/dpsoccerdude101/rig-morning-digest/issues/7)
-- [#8 Remove marker and archive plan](https://github.com/dpsoccerdude101/rig-morning-digest/issues/8)
