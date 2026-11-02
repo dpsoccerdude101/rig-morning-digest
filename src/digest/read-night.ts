@@ -17,7 +17,7 @@ function isStatus(value: unknown): value is DigestStatus {
 function isRunRecord(value: unknown): value is RunRecord {
   if (value === null || typeof value !== 'object' || Array.isArray(value)) return false;
 
-  const record: Record<string, unknown> = value;
+  const record = value as Record<string, unknown>;
   return (
     typeof record.at === 'string' &&
     typeof record.job === 'string' &&
