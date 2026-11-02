@@ -15,5 +15,3 @@ export type NightDigest = {
   rows: DigestRow[];
   malformedLines: number;
 };
-
-export declare function readNight(runsDir: string, night: string): NightDigest | null;
