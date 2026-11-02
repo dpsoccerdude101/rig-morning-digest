@@ -1,5 +1,9 @@
 import type { Status } from '../status.js';
 
+function displayCount(value: number | undefined): number | string {
+  return value ?? '—';
+}
+
 export function StatusBoard({ status }: { status: Status }) {
   return (
     <>
@@ -19,8 +23,13 @@ export function StatusBoard({ status }: { status: Status }) {
         <p class="mute">nothing in runs/</p>
       ) : (
         <ul>
-          {status.nights.map((n) => (
-            <li>{n}</li>
+          {status.nights.map(({ night, counts }) => (
+            <li>
+              <a href={`/digest/${night}`}>{night}</a>
+              {' · '}ok {displayCount(counts?.ok)}
+              {' · '}retry {displayCount(counts?.retry)}
+              {' · '}fail {displayCount(counts?.fail)}
+            </li>
           ))}
         </ul>
       )}
